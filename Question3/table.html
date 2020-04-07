@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TABLE</title>
+	<style type="text/css">
+		table th,td
+		{
+			border:3px solid green;
+		}
+		table
+		{
+			border-collapse: collapse;
+			width: 100%;
+			color: purple;
+			font-family: verdana;
+		}
+		td{
+			text-align: center;
+		}
+		th{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+<table>
+	<caption>Software Timetable</caption>
+	<thead>
+		<tr><th>Couseno</th><th>Dept</th><th style="background-color:pink">lab Time</th><th style="background-color:gray">Lecture time</th><th>Teacher</th></tr>
+	</thead>
+
+	<tbody>
+		<tr><td>004</td><td rowspan="2" align="middle">SE</td><td style="background-color:pink">9-10am</td><td  style="background-color:gray">11am-1pm</td><td rowspan="2" align="middle">Tr.Ali</td></tr>
+
+		<tr><td>006</td><td style="background-color:pink">12-2pm</td><td  style="background-color:gray">2-4pm</td></tr>
+
+		<tr><td colspan="5" align="middle">From Thursday to Saturday</td></tr>
+
+		<tr><td>004</td><td rowspan="2" align="middle">SE</td><td style="background-color:pink">9-10am</td><td  style="background-color:gray">11am-1pm</td><td rowspan="2" align="middle">Tr.Vaubow</td></tr>
+
+		<tr><td>006</td><td style="background-color:pink">12-2pm</td><td  style="background-color:gray">2-4pm</td></tr>
+	</tbody>
+</table>
+</body>
+</html>

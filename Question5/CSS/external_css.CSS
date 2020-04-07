@@ -1,0 +1,34 @@
+h2
+{
+	color: purple;
+	font-family: helvetica;
+	text-align: center;
+}
+
+hr
+{
+	size: 5px;
+	color: red;
+}
+
+p
+{
+	font-size: 35px;
+	color: lime;
+	font-family:Comic Sans MS;
+	word-spacing: 5px;
+	text-align: center; 
+}
+
+a:link{color:orange}
+a:visited{color:red}
+a:hover{color: yellow}
+a:active{color: pink}
+
+.from
+{
+	color: cyan;
+	letter-spacing: 6px;
+	font-family: chiller;
+	font-size: 40px;
+}

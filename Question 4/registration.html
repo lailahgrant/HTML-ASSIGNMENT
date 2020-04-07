@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION FORM</title>
+	<script type="text/javascript">
+		function Validation()
+		{
+			if(document.registration.fn.value=="")
+			{
+				alert ("Enter First name");
+				document.registration.fn.focus();
+				document.registration.fn.select();
+				return false;
+			}
+			else if (!isNaN(document.registration.fn.value)) 
+			{
+				alert("Invalid Input");
+				document.registration.fn.focus();
+				document.registration.fn.select();
+				return false;
+			}
+			else if (document.registration.ln.value=="") 
+			{
+				alert("Enter Last name");
+				document.registration.ln.focus();
+				document.registration.ln.select();
+				return false;
+			}
+			else if (!isNaN(document.registration.ln.value)) 
+			{
+				alert("Invalid Input");
+				document.registration.ln.focus();
+				document.registration.ln.select();
+				return false;
+			}
+			else if (document.registration.ml.value=="") 
+			{
+				alert("Enter Middle name");
+				document.registration.ml.focus();
+				document.registration.ml.select();
+				return false;
+			}
+			else if (!isNaN(document.registration.ml.value)) 
+			{
+				alert("Invalid Input");
+				document.registration.ml.focus();
+				document.registration.ml.select();
+				return false;
+			}
+			else if (document.registration.em.value=="") 
+			{
+				alert("Enter your Email");
+				document.registration.em.focus();
+				document.registration.em.select();
+				return false;
+			}
+			else if (!isNaN(document.registration.em.value)) 
+			{
+				alert("Invalid Input");
+				document.registration.em.focus();
+				document.registration.em.select();
+				return false;
+			}
+		}
+	</script>
+</head>
+<body bgcolor="#6666CC">
+	<center><div style="color:lime; font-size:30px; font-family:Comic Sans MS;">
+		<p style="color:aqua"><u>REGISTRATION FORM</u></p>
+		<form name="registration" method="post" action="registration.php" onSubmit="return Validation();">
+			<table>
+				<caption style="color:purple">User Registration Form</caption>
+				<tr><td>First name</td><td><input type="text" name="fn" required></td></tr>
+
+				<tr><td>Middle name</td><td><input type="text" name="ml" required></td></tr>
+
+				<tr><td>Last name</td><td><input type="text" name="ln" required></td></tr>
+
+				<tr><td>Gender</td><td><input type="radio" name="gender" value="M" checked>Male<input type="radio" name="gender" value="F">Female</td></tr>
+
+				<tr><td>Hobbies</td><td><select style="color:aqua; font-family:Helvetica; font-size:25px">
+					<option>---Choose---</option>
+					<option>Dancing</option>
+					<option>Singing</option>
+					<option>Travelling</option>
+					<option>playing Football</option>
+					<option>Shopping</option>
+					<option>Reading</option>
+				</select></td></tr>
+
+				<tr><td>Email</td><td><input type="email" name="em" required placeholder="Enter your Email"></td></tr>
+
+				<tr><td>Mobile</td><td><input type="text" required placeholder="Enter Your Mobile" maxlength="14"></td></tr>
+
+				<tr><td>Address</td><td><textarea rows="5" cols="20" required></textarea></td></tr>
+			</table>
+
+			<input type="Submit" name="Submit" value="Submit">
+
+			<input type="Reset" name="Reset" value="Reset">
+		</form>
+	</div></center>
+</body>
+</html>
